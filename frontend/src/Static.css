@@ -1,0 +1,52 @@
+.static-container {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.properties-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  overflow-y: auto;
+  padding-right: 5px;
+  max-height: 100%;
+}
+
+.map-wrapper {
+  flex: 2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#map-container {
+  width: 100%;
+  height: 100%;
+}
+
+.scrollable {
+  max-height: 600px;      /* можно изменить по желанию */
+  overflow-y: auto;
+  padding-right: 5px;     /* чтобы не прилипал скроллбар */
+}
+
+
+/* Адаптив для мобилок */
+@media (max-width: 900px) {
+  .static-container {
+    flex-direction: column;
+  }
+
+  .map-wrapper {
+    height: 400px;
+    min-width: unset;
+  }
+
+  .scrollable {
+    max-height: 400px;
+  }
+}

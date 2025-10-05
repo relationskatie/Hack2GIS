@@ -1,0 +1,65 @@
+.property-card {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.property-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+.property-name {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: #222;
+}
+
+.property-description {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+
+.images img {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.infrastructure-category {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.infrastructure-category ul {
+  margin: 5px 0 0 15px;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.property-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.property-link:hover {
+  text-decoration: underline;
+}
